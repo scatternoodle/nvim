@@ -8,8 +8,8 @@ local state_dir = homedir .. "/.local/state/nvim-colorscheme-saver"
 local colorscheme_filename = "current_theme.txt"
 local colorscheme_filepath = state_dir .. "/" .. colorscheme_filename
 
-local function get_file_for_writing(filepath)
-	local file, err = io.open(filepath, "w")
+local function must_get_file(filepath, op)
+	local file, err = io.open(filepath, op)
 	if not file then
 		error("unable to open or create file at " .. filepath .. ": " .. err)
 	end
@@ -18,12 +18,12 @@ end
 
 M.setup = function()
 	vim.fn.mkdir(state_dir, "p")
-	local file = get_file_for_writing(colorscheme_filepath)
+	local file = must_get_file(colorscheme_filepath, "r")
 
 	local scheme = file:read("*l")
 	file:close()
 	if scheme and scheme ~= "" then
-		local ok, err = pcall(vim.cmd, "colorscheme" .. scheme)
+		local ok, err = pcall(vim.cmd, "colorscheme " .. scheme)
 		if not ok then
 			print("error setting colorscheme " .. scheme .. ": " .. err)
 		end
@@ -31,7 +31,7 @@ M.setup = function()
 
 	vim.api.nvim_create_autocmd("ColorScheme", {
 		callback = function(args)
-			file = get_file_for_writing(colorscheme_filepath)
+			file = must_get_file(colorscheme_filepath, "w")
 			local ok, err = pcall(function(c)
 				file:write(c)
 			end, args.match)
