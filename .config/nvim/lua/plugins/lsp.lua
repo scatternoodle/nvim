@@ -170,9 +170,9 @@ return {
 
 			-- templ = {},
 
-			-- html = {
-			-- 	filetypes = { "html", "templ" },
-			-- },
+			html = {
+				filetypes = { "html", "templ", "jnlp", "jnlpx" },
+			},
 
 			rust_analyzer = {},
 
