@@ -45,6 +45,8 @@ return {
 	addScheme("webhooked/kanso.nvim"),
 	addScheme("ellisonleao/gruvbox.nvim"),
 	addScheme("fenetikm/falcon"),
+	addScheme("bjarneo/nes.nvim"),
+	addScheme("e-ink-colorscheme/e-ink.nvim"),
 
 	{
 		"zenbones-theme/zenbones.nvim",
