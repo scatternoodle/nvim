@@ -1,4 +1,5 @@
 {
+  "Base2Tone-nvim": { "branch": "main", "commit": "c32c1d3dfdc8fb6e91cbf6078c078d6c3eaaa673" },
   "LuaSnip": { "branch": "master", "commit": "3732756842a2f7e0e76a7b0487e9692072857277" },
   "aseprite.nvim": { "branch": "main", "commit": "96fe696ca99d7ea2e8e56b6ce31af2ece710ba35" },
   "austere.vim": { "branch": "master", "commit": "d985d31982bef869055e7a8c8d01cfe8c2992279" },

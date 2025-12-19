@@ -179,6 +179,8 @@ return {
 			jqls = {},
 
 			-- prettier = {},
+
+			sleek = {},
 		}
 
 		-- Ensure the servers and tools above are installed
