@@ -47,6 +47,7 @@ return {
 	addScheme("fenetikm/falcon"),
 	addScheme("bjarneo/nes.nvim"),
 	addScheme("e-ink-colorscheme/e-ink.nvim"),
+	addScheme("atelierbram/Base2Tone-nvim"),
 
 	{
 		"zenbones-theme/zenbones.nvim",
