@@ -1,3 +1,7 @@
+-- c-style.lua - mostly some fussy stuff because clang-format doesn't always behave
+-- quite like I want it. To be used in conjunction with a proper clang-format
+-- config.
+
 vim.opt_local.cindent = true
 vim.opt_local.cinoptions:append({
 	-- Indent 'case' labels relative to 'switch'
