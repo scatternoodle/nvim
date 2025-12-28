@@ -181,6 +181,8 @@ return {
 			-- prettier = {},
 
 			sleek = {},
+
+			shfmt = {},
 		}
 
 		-- Ensure the servers and tools above are installed
