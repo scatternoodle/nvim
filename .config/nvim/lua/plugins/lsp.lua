@@ -183,6 +183,10 @@ return {
 			sleek = {},
 
 			shfmt = {},
+
+			-- NOTE: for autocomplete, you need to have prettier-plugin-awk installed
+			-- sudo npm install --global prettier@^2 prettier-plugin-awk
+			awk_ls = {},
 		}
 
 		-- Ensure the servers and tools above are installed
