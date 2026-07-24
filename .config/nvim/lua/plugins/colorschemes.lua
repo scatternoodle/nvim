@@ -18,11 +18,11 @@ return {
 	-- Add colorscheme plugins below...
 	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 	addScheme("rebelot/kanagawa.nvim"),
-	-- addScheme("miikanissi/modus-themes.nvim"),
+	addScheme("miikanissi/modus-themes.nvim"),
 	addScheme("folke/tokyonight.nvim"),
 	-- addScheme("Shatur/neovim-ayu"),
 	-- addScheme("RRethy/base16-nvim"), -- so many in this one, it's overwhelming and messes with telescope
-	-- addScheme("xero/miasma.nvim"),
+	addScheme("xero/miasma.nvim"),
 	-- addScheme("cocopon/iceberg.vim"),
 	addScheme("ntk148v/komau.vim"),
 	addScheme("LuRsT/austere.vim"),
@@ -36,7 +36,7 @@ return {
 	addScheme("thesimonho/kanagawa-paper.nvim"),
 	addScheme("rose-pine/neovim"),
 	addScheme("projekt0n/github-nvim-theme"),
-	-- addScheme("Mofiqul/vscode.nvim"),
+	addScheme("Mofiqul/vscode.nvim"),
 	addScheme("Mofiqul/dracula.nvim"),
 	addScheme("shaunsingh/nord.nvim"),
 	-- addScheme("nyoom-engineering/oxocarbon.nvim"),
