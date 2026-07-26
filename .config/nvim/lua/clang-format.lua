@@ -15,7 +15,7 @@ function M.get_style_arg(filepath, default_indent_width)
 	local args = "--style="
 	local f = io.open(filepath, "r")
 	if not f then
-		args = args .. [["{BasedOnStyle: llvm, ]] .. string.format('IndentWidth: %d}"', default_indent_width)
+		args = args .. string.format('{IndentWidth: %d}"', default_indent_width)
 		vim.notify(
 			string.format(
 				"[clang-format] Config file not found at %s. Falling back to default args: %s",

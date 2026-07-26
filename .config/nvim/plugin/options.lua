@@ -59,9 +59,9 @@ vim.schedule(function()
 end)
 
 opt.breakindent = true
-opt.shiftwidth = 6
-opt.tabstop = 6
-opt.softtabstop = 6
+opt.shiftwidth = 4
+opt.tabstop = 4
+opt.softtabstop = 4
 opt.expandtab = true
 
 -- Save undo history
