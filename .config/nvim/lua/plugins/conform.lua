@@ -28,18 +28,18 @@ return { -- Better autoformat replacer - add language replacers as desired.
 		end,
 
 		formatters = {
-			clang_format = {
-				prepend_args = {
-					clang_format.get_style_arg(nil, 8),
-				},
-			},
+			-- clang_format = {
+			-- 	prepend_args = {
+			-- 		clang_format.get_style_arg(nil, 8),
+			-- 	},
+			-- },
 		},
 
 		-- see https://github.com/stevearc/conform.nvim?tab=readme-ov-file#customizing-formatters
 		formatters_by_ft = {
 			lua = { "stylua" },
-			c = { "clang_format" },
-			cpp = { "clang_format" },
+			-- c = { "clang_format" },
+			-- cpp = { "clang_format" },
 			json = { "prettier" },
 			yaml = { "prettier" },
 			sql = { "sleek" },
