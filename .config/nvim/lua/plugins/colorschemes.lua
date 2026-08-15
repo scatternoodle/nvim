@@ -22,6 +22,7 @@ return {
 	addScheme("folke/tokyonight.nvim"),
 	-- addScheme("Shatur/neovim-ayu"),
 	-- addScheme("RRethy/base16-nvim"), -- so many in this one, it's overwhelming and messes with telescope
+	-- addScheme("atelierbram/Base2Tone-nvim"),
 	addScheme("xero/miasma.nvim"),
 	-- addScheme("cocopon/iceberg.vim"),
 	addScheme("ntk148v/komau.vim"),
@@ -47,8 +48,9 @@ return {
 	addScheme("fenetikm/falcon"),
 	addScheme("bjarneo/nes.nvim"),
 	addScheme("e-ink-colorscheme/e-ink.nvim"),
-	addScheme("atelierbram/Base2Tone-nvim"),
-
+	addScheme("silentium-theme/silentium.nvim"),
+	addScheme("zekzekus/menguless"),
+	addScheme("kungfusheep/mfd.nvim"),
 	{
 		"zenbones-theme/zenbones.nvim",
 		-- Optionally install Lush. Allows for more configuration or extending the colorscheme
